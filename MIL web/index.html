@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIL Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="band"></div>
+
+    <div class="stage">
+
+      <!-- NAVBAR -->
+      <header class="nav">
+        <div class="logo">M.I.L</div>
+  
+        <div class="counter"><span class="search">&#9679;</span><span id="count" class="btn">1 / 7</span></div>
+      </header>
+
+      <!-- 1. COMPARATIVE REPORT -->
+      <section class="slide active">
+        <div class="left">
+          <h1>EDSA I vs. EDSA II</h1>
+          <p class="sub">Comparative Report</p>
+        </div>
+        <div class="center">
+          <img src="images/edsa.png" alt="EDSA I vs EDSA II">
+        </div>
+        <div class="right">
+          <button class="read-btn" data-doc="documents/edsa-report.pdf">Read Full Report</button>
+        </div>
+      </section>
+
+      <!-- 2. REFLECTION -->
+      <section class="slide">
+        <div class="left">
+          <h1>Magtanim ay 'Di Biro</h1>
+          <p class="sub">Reflection &middot; Kara David</p>
+        </div>
+        <div class="center">
+          <img src="images/magtanim.png" alt="Magtanim ay Di Biro">
+        </div>
+        <div class="right"></div>
+      </section>
+
+      <!-- 3. ILLUSTRATION -->
+      <section class="slide">
+        <div class="left">
+          <h1>Multo</h1>
+          <p class="sub">Illustration &middot; Cup of Joe</p>
+        </div>
+        <div class="center">
+          <img src="images/multo.png" alt="Multo illustration">
+        </div>
+        <div class="right"></div>
+      </section>
+
+      <!-- 4. TYPEFACE -->
+      <section class="slide">
+        <div class="left">
+          <h1>Your Name</h1>
+          <p class="sub">Typeface</p>
+        </div>
+        <div class="center">
+          <img src="images/typeface.png" alt="Typeface made from my name">
+        </div>
+        <div class="right"></div>
+      </section>
+
+      <!-- 5. PROCESS DESCRIPTION -->
+      <section class="slide">
+        <div class="left">
+          <h1>Process Description</h1>
+          <p class="sub">Step by step</p>
+        </div>
+        <div class="center">
+          <img src="images/process.png" alt="Process description">
+        </div>
+        <div class="right">
+          <button class="read-btn" data-doc="documents/process.pdf">Read Full Process</button>
+        </div>
+      </section>
+
+      <!-- 6. MOVIE REVIEW -->
+      <section class="slide">
+        <div class="left">
+          <h1>Straw</h1>
+          <p class="sub">Movie Review</p>
+        </div>
+        <div class="center">
+          <img src="images/straw.png" alt="Straw movie review">
+        </div>
+        <div class="right">
+          
+        </div>
+      </section>
+
+      <!-- 7. MOVIE POSTER -->
+      <section class="slide">
+        <div class="left">
+          <h1>Ang Huling El Bimbo</h1>
+          <p class="sub">Movie Poster &middot; The Hit Musical</p>
+        </div>
+        <div class="center">
+          <img src="images/elbimbo.png" alt="Ang Huling El Bimbo movie poster">
+        </div>
+        <div class="right"></div>
+      </section>
+
+      <!-- NEXT CARD + DIAMOND DOTS -->
+      <button class="next" id="nextCard" aria-label="Next slide">
+        <span class="thumb" id="nextNum">2</span>
+        <span class="info"><small>Next</small><strong id="nextTitle">Magtanim ay 'Di Biro</strong></span>
+      </button>
+      <div class="dots" id="dots"></div>
+
+      <div class="arrows">
+        <button id="prev" aria-label="Previous">&#8592;</button>
+        <button id="nextBtn" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOCUMENT VIEWER -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <a class="modal-open" id="docLink" href="#" target="_blank" rel="noopener">Not showing? Open in new tab &#8599;</a>
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <iframe id="docFrame" title="Document viewer"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
