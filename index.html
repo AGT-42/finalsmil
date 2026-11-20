@@ -7,6 +7,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .profile { display: flex; align-items: center; gap: 14px; }
+    .profile img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+      border: 3px solid var(--red);
+      box-shadow: 0 6px 14px rgba(0,0,0,.2);
+    }
+    .profile-name {
+      display: flex;
+      flex-direction: column;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.05;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,8 +39,19 @@
 
       <!-- NAVBAR -->
       <header class="nav">
-        <div class="logo">M.I.L</div>
-  
+        <div class="profile">
+          <img src="images/toni.jpg" alt="Toni Garduño">
+          <div class="profile-name">
+            <span>Toni</span>
+            <span>Garduño</span>
+          </div>
+        </div>
+        <nav>
+          <a href="#" data-go="0">Report</a>
+          <a href="#" data-go="1">Writing</a>
+          <a href="#" data-go="2">Design</a>
+          <a href="#" data-go="5">Films</a>
+        </nav>
         <div class="counter"><span class="search">&#9679;</span><span id="count" class="btn">1 / 7</span></div>
       </header>
 
@@ -43,7 +76,7 @@
           <p class="sub">Reflection &middot; Kara David</p>
         </div>
         <div class="center">
-          <img src="images/magtanim.png" alt="Magtanim ay Di Biro">
+          <img src="images/magtanim.jpg" alt="Magtanim ay Di Biro">
         </div>
         <div class="right"></div>
       </section>
@@ -79,10 +112,10 @@
           <p class="sub">Step by step</p>
         </div>
         <div class="center">
-          <img src="images/process.png" alt="Process description">
+          <img src="images/process.jpg" alt="Process description">
         </div>
         <div class="right">
-          <button class="read-btn" data-doc="documents/process.pdf">Read Full Process</button>
+          <button class="read-btn" data-doc="documents/process-description.pdf">Read Full Process</button>
         </div>
       </section>
 
@@ -93,10 +126,10 @@
           <p class="sub">Movie Review</p>
         </div>
         <div class="center">
-          <img src="images/straw.png" alt="Straw movie review">
+          <img src="images/straw.jpg" alt="Straw movie review">
         </div>
         <div class="right">
-          
+          <button class="read-btn" data-doc="documents/straw-review.pdf">Read Full Review</button>
         </div>
       </section>
 
@@ -107,7 +140,7 @@
           <p class="sub">Movie Poster &middot; The Hit Musical</p>
         </div>
         <div class="center">
-          <img src="images/elbimbo.png" alt="Ang Huling El Bimbo movie poster">
+          <img src="images/poster.png" alt="Ang Huling El Bimbo movie poster">
         </div>
         <div class="right"></div>
       </section>
